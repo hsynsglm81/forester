@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+ 
+/*CSS Değişken Kullanımı*/
+/*değişken tanımlama ve değer atama*/
+:root{
+    --yazi-renk:#fff;
+    --bg-renk:#ff6b81;
+    --bg-aktif-renk:#ff4757;
+}
+ 
+h1,
+h2,
+p,
+ul,
+li,
+body{
+    margin:0;
+    padding:0;
+}
+ 
+body{
+    background: url(gorsel/bg2.jpg) fixed; /*fixed arkaplanı sabitler*/
+    font-family: 'Montserrat', sans-serif;
+}
+.sayfa{
+    width: 960px;
+    margin:10px auto;
+    background: var(--yazi-renk);
+    border:3px solid var(--bg-renk);
+    border-radius: 10px;
+    overflow: hidden;/*taşan kısımlar temizleniyor*/
+}
+#logo img{
+    width: 100%;
+    vertical-align: middle;
+}
+#ust-menu > ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    background: var(--bg-renk);
+    justify-content: space-around;
+}
+ 
+#ust-menu > ul > li{
+    position: relative;
+    flex-grow: 1;
+}
+ 
+#ust-menu > ul ul{
+    display: none;
+    list-style: none;
+    position: absolute;
+    background: var(--bg-renk);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+#ust-menu > ul > li:hover ul{
+   /*display: block; yada flex kullanılabilir*/
+   display: flex;
+   flex-direction: column;
+}
+#ust-menu ul li:hover{
+    background:var(--bg-aktif-renk);
+}
+#ust-menu ul li a{
+    text-align: center;
+    display: block; /*bulunduğu alanın içinde 100% olarak duracak*/
+    height: 40px;
+    line-height: 40px;
+    color:var(--yazi-renk);
+    text-decoration: none;
+    font-size: 1.2em;;
+}
+main{
+    padding:20px;/*margin de kullanılabilir*/
+}
+main p{
+    margin:5px 0;
+}
+ 
+ 
+ 
+footer{
+    background:var(--bg-renk);
+    padding:15px;
+    text-align: center;
+    color:var(--yazi-renk);
+}
+ 
+/*diğer css kodları*/
+.yatay-cizgi{
+    border-bottom:1px solid #a4b0be;
+    margin:10px 0;
+}
