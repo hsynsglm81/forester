@@ -1,0 +1,169 @@
+body {
+    color: #040205;
+    /*
+     background-color: aquamarine;
+    background-image: url('cocuklar.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right top;
+    */
+    
+    background: aquamarine url('cocuklar.jpeg') no-repeat fixed right top;
+}
+
+/* tabla yazi islemleri */
+table{
+    text-align: center; /* haziyi ortaladik */
+}
+
+#ozel-resim{
+    width: 50%;
+    height: 200px;
+}
+
+ul {
+    background-color: greenyellow;
+
+}
+
+.liste{
+    font-size: 20pt;
+    color: rgb(200, 100, 50);
+    list-style-type: square;
+}
+
+.liste1 {
+    list-style-type: armenian;
+}
+
+.liste2 {
+    list-style-type: georgian;
+    margin: 10px 20px 30px 40px;
+}
+
+.liste3 {
+    list-style-type: decimal;
+    margin: 20px 40px;
+}
+
+.liste4 {
+    list-style-type: lower-alpha;
+    margin: 20px;
+}
+
+.liste5 {
+    list-style-type: upper-roman;
+
+    border-left-style: dashed;
+    border-top-style: dotted;
+    border-right-style: solid;
+
+    border-left-color: red;
+    border-top-color: rgb(11, 46, 38);
+    border-right-color: goldenrod;
+
+    border-left-width: 5px;
+    border-top-width: 15px;
+    border-right-width: 10px;
+
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+    /*
+    outline-width: 10px;
+    outline-color: darkcyan;
+    outline-style: solid;
+    */
+
+    outline: 10px darkcyan solid;
+
+}
+
+.eleman1 {
+    background-color: green;
+    margin-top: 10px; 
+    border: outset red 10px;
+}
+
+.eleman {
+    background-color: green;
+    margin-top: 10px;
+    list-style-position: inside;
+    border: inset red 10px;
+}
+
+.ilkp {
+    text-align: justify;
+    font-style: italic;
+    border: ridge red 10px;
+}
+
+.ikincip {
+    text-align: right;
+    text-transform: lowercase;
+    font-weight: bold;
+    border: groove red 10px;
+
+}
+
+.ozela {
+    background-color: aquamarine;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: double red 5px;
+}
+
+.ozela:link {
+    background-color: red;
+}
+
+.ozela:visited {
+    background-color: azure;
+}
+
+.ozela:hover{
+    background-color: yellow;
+}
+
+.ozela:active {
+    background-color: green;
+}
+
+.ucuncup {
+    text-indent: 0.2in;
+    line-height: 1cm;
+    letter-spacing: 0.3mm;
+    word-spacing: 0.9em;
+    font-family: 'Courier New', Courier, monospace;
+    border: solid red 5px;
+}
+
+/* 
+% yuzde
+in inc
+cm santim
+mm milimetre
+em varsayilan
+pt punto
+px piksel
+*/
+
+.tablo {
+    background-color: aquamarine;
+    border-collapse: collapse;
+    border: dashed red 5px;
+}
+
+.bolum {
+    background-color: aqua;
+    height: 100px;
+    width: 200px;
+    /*
+    border-style: dotted;
+    border-color: red;
+    border-width: 5px;*/
+
+    border: dotted red 5px;
+}
